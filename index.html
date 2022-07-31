@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>machakelvin</title>
+    <link rel="stylesheet" href="macha.css">
+    <script src="macha.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>macha's simple calculator</h3>
+        <div class="calculator">
+            <div class="screen">
+
+                <input type="text" id="input">
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="btn black_btn" onclick="clearScreen()">Clear</button>
+                    <button class="btn" onclick="display('7')">7</button>
+                    <button class="btn" onclick="display('4')">4</button>
+                    <button class="btn" onclick="display('1')">1</button>
+                    <button class="btn" onclick="display('0')">0</button>
+                </div>
+                <div class="row">
+                    <button class="btn black_btn">M+</button>
+                    <button class="btn" onclick="display('8')">8</button>
+                    <button class="btn" onclick="display('5')">5</button>
+                    <button class="btn" onclick="display('2')">2</button>
+                    <button class="btn" onclick="display('00')">00</button>
+                </div>
+                <div class="buttons">
+                    <div class="row">
+                        <button class="btn" onclick="display('/')">/</button>
+                        <button class="btn" onclick="display('9')">9</button>
+                        <button class="btn" onclick="display('6')">6</button>
+                        <button class="btn" onclick="display('3')">3</button>
+                        <button class="btn" onclick="display('.')">.</button>
+                    </div>
+                    <div class="buttons">
+                        <div class="row row-3">
+                            <button class="btn" onclick="display('*')">x</button>
+                            <button class="btn" onclick="display('-')">-</button>
+                            <button class="btn" onclick="display('+')">+</button>
+                            <button class="btn equal_btn" onclick="calculate()">=</button>
+                        </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
